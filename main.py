@@ -459,7 +459,7 @@ def sql_query_1NF(primary_keys, df):
     query = query.rstrip(',\n') + "\n);"
 
     with open('output.txt', 'w') as file: 
-        file.write(query)
+        file.write("SQL queries to create" + max_normal_form + "NF: " +"\n" + query)
     print(query)
 
 
@@ -497,7 +497,7 @@ def sql_query(rels):
     print(sql_queries)
     with open('output.txt', 'w') as file:
         for query in sql_queries:
-            file.write(query)
+            file.write("SQL queries to create " + str(max_normal_form) + "NF: " +"\n" + query)
             file.write('\n')
 
 

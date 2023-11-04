@@ -1,21 +1,25 @@
+SQL queries to create 4NF: 
 CREATE TABLE StudentID_table (
   StudentID VARCHAR(255) PRIMARY KEY,
   FirstName VARCHAR(255),
   LastName VARCHAR(255)
 );
+SQL queries to create 4NF: 
 CREATE TABLE Course_table (
   Course VARCHAR(255) PRIMARY KEY,
   CourseStart VARCHAR(255),
   CourseEnd VARCHAR(255)
 );
+SQL queries to create 4NF: 
 CREATE TABLE Professor_table (
   Professor VARCHAR(255) PRIMARY KEY,
   ProfessorEmail VARCHAR(255)
 );
-CREATE TABLE _table (
+SQL queries to create 4NF: 
+CREATE TABLE StudentID_Courses_table (
+ FOREIGN KEY (StudentID) REFERENCES StudentID_table(StudentID),
   classRoom VARCHAR(255),
-  StudentID VARCHAR(255),
   Course VARCHAR(255),
   Professor VARCHAR(255)
 );
-Highest normal form of the input table: 2NF
+Highest normal form of the input table: 1NF
