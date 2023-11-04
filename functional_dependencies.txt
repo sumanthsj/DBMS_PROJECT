@@ -1,0 +1,4 @@
+StudentID -> FirstName, LastName
+Course, Professor -> classroom
+Course -> CourseStart, CourseEnd
+Professor -> ProfessorEmail
